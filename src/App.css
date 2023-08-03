@@ -1,0 +1,74 @@
+body{
+  background-color: rgb(83, 21, 83);
+  color: #fff;
+  font-size: 16px;
+}
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 40px;
+}
+.uploadedImg{
+  height: 300px;
+  width: 250px;
+  border: 1px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.uploadedImg img{
+  height: 300px;
+  width: 250px;
+  object-fit: cover;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 25%;
+  border: 1px solid white;
+  padding: 20px;
+}
+#image{
+  display: none;
+}
+
+.imageLabel{
+  cursor: pointer;
+}
+
+label{
+  font-size: 20px;
+}
+
+input{
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+input:focus{
+  border-bottom-color: white;
+  outline: none;
+}
+input:focus::placeholder{
+  color: white;
+}
+input::placeholder{
+  color: grey
+}
+button{
+  color: white;
+  border: none;
+  background-color: rgb(15, 15, 15);
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+button:hover{
+  background-color: #141414;
+}
